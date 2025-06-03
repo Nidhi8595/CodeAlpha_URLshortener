@@ -7,7 +7,7 @@ export default function UrlShortener() {
   const [shortUrl, setShortUrl] = useState("");
 
   const handleShorten = async () => {
-    const res = await axios.post("https://your-backend-url.onrender.com/shorten", {
+    const res = await axios.post("https://codealpha-urlshortener-backend.onrender.com/shorten", {
       originalUrl: input,
     });
     setShortUrl(res.data.shortUrl);
